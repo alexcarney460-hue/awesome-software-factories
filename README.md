@@ -100,6 +100,7 @@ End-to-end systems: work comes in from a backlog, agents plan, build, test, and 
 - [Superplane](https://github.com/superplanehq/superplane) - Self-hostable orchestrator that runs agents against backlog issues and coordinates the surrounding source control, CI, review, and approvals, looping a failed run back to the agent with context.
 - [SWE-AF](https://github.com/Agent-Field/SWE-AF) - "Autonomous software engineering fleet." One API call plans, codes, tests, and ships a PR. `Backends: Claude Code, OpenCode, Codex`
 - [Symphony](https://github.com/openai/symphony) - OpenAI's open spec plus Elixir reference implementation for turning issue-tracker items into isolated, autonomous agent runs. The tracker is the control plane. `Backends: any, demo uses Codex`
+- [Synara](https://github.com/Emanuele-web04/synara) - Local-first desktop app combining project management, coding-agent sessions, terminal and browser tools, and code review in one workspace.
 - [Taskplane](https://github.com/HenryLach/taskplane) - Multi-agent coding orchestration that describes itself as "more light-factory than dark-factory." Transparency first.
 - [zeroshot](https://github.com/the-open-engine/zeroshot) - Planner and implementer loop with independent validators in isolated worktrees or Docker, running until a change verifies or fails with a reproducible report. Pulls from GitHub, GitLab, Jira, Azure DevOps. `Backends: Claude, Codex, Gemini, OpenCode`
 
@@ -208,6 +209,7 @@ Run many agent sessions at once, each in its own worktree, and review their outp
 - [ai-fleet](https://github.com/nachoal/ai-fleet) - Simple fleet manager for parallel agents over tmux. `Backends: Claude Code, Codex` `⚠️ unmaintained`
 - [ai-maestro](https://github.com/23blocks-OS/ai-maestro) - Dashboard and peer mesh for coordinating agents across machines, with agent-to-agent messaging and persistent memory. `Backends: Claude Code, Codex, Aider, Cursor`
 - [AionUi](https://github.com/iOfficeAI/AionUi) - Free desktop app that runs 20+ CLI agents around the clock. `Backends: OpenClaw, Hermes, Claude Code, Codex, OpenCode, and more`
+- [Aizen](https://github.com/vivy-company/aizen) - macOS workspace for parallel development that gives each project or branch its own terminal, files, browser, agent session, and git state.
 - [Alethe](https://github.com/Kc1t/alethe-agents) - Local-first desktop workspace that runs several coding agents side by side, each in its own PTY pane with persistent history. `Backends: Claude Code, Codex, Copilot, and more`
 - [amux (andyrewlee)](https://github.com/andyrewlee/amux) - Wrapper-free TUI for parallel agents with worktree support.
 - [amux (mixpeek)](https://github.com/mixpeek/amux) - Control plane for an "AI engineering team": shared board, atomic tasks, schedules, self-healing recovery, single Rust binary.
@@ -217,6 +219,7 @@ Run many agent sessions at once, each in its own worktree, and review their outp
 - [automaker](https://github.com/AutoMaker-Org/automaker) - Kanban board that turns tickets into working code, each card in its own worktree with tests run and committed automatically. `⚠️ unmaintained`
 - [bb](https://github.com/get-bb/bb) - Self-controlling agentic IDE that orchestrates agents in live threads from desktop, web, CLI, or HTTP API.
 - [Berd](https://github.com/block/berd) - Block's open-source desktop app for working with any model-backed coding agent, built on a Goose backend sidecar.
+- [Calyx](https://github.com/yuuichieguchi/Calyx) - Native macOS terminal app built on Ghostty for running and supervising multiple coding agents, with an approval inbox and code-review view. `Backends: Claude Code, Codex, OpenCode, Hermes, Grok, Pi`
 - [Camelot](https://github.com/T0ha/camelot) - Kanban-based coding agent orchestrator in Elixir, built on KISS.
 - [Canopy](https://github.com/juliensimon/canopy) - Native macOS app that runs several Claude Code sessions in parallel tabs, each in its own git worktree and sandbox, with collision detection and one-click merge. `Backends: Claude Code`
 - [Cate](https://github.com/0-AI-UG/cate) - Desktop app that runs terminals, agent panels, editors, and browsers on an infinite zoomable canvas.
@@ -235,6 +238,7 @@ Run many agent sessions at once, each in its own worktree, and review their outp
 - [Claudexor](https://github.com/razzant/claudexor) - Local control plane that rotates quota across your Claude and Codex subscriptions and runs best-of-N cross-model review. `Backends: Claude Code, Codex, Cursor, OpenCode`
 - [claw-orchestrator](https://github.com/Enderfga/claw-orchestrator) - Runs five agent CLIs as one runtime with persistent sessions, multi-agent "councils," an OpenAI-compatible endpoint, and an MCP server. `Backends: Claude Code, Codex, Antigravity, Cursor Agent, OpenCode`
 - [CLI Agent Orchestrator](https://github.com/awslabs/cli-agent-orchestrator) - AWS Labs supervisor that coordinates multiple coding CLIs in isolated tmux sessions. `Backends: Kiro, Claude Code, Codex, Antigravity, Copilot, OpenCode, Cursor, and more`
+- [CliDeck](https://github.com/rustykuntz/clideck) - Local workspace that runs several CLI coding agents in one browser window, grouped into projects with resumable sessions and cross-session messaging. `Backends: Claude Code, Codex, Gemini CLI, OpenCode, Pi`
 - [clodfarm](https://github.com/matank001/clodfarm) - Container farm of Claude Code agents that splits a mission into sub-agents on worktrees, merges only when tests pass, and paces itself on each account's usage limits. `Backends: Claude Code`
 - [cmux (craigsc)](https://github.com/craigsc/cmux) - Bash tool that runs a fleet of Claude Code agents on the same repo, one worktree each. `Backends: Claude Code`
 - [cmux (manaflow)](https://github.com/manaflow-ai/cmux) - Ghostty-based macOS terminal with vertical tabs built for multitasking across many agents.
@@ -252,6 +256,7 @@ Run many agent sessions at once, each in its own worktree, and review their outp
 - [diri](https://github.com/cristicretu/diri) - Native workspace that runs Claude Code, Codex, Cursor, and Gemini in parallel worktrees, with diff review and PR checks in place. `Backends: Claude Code, Codex, Cursor, Gemini`
 - [dmux](https://github.com/standardagents/dmux) - Dev-agent multiplexer that runs agents in isolated worktrees over tmux.
 - [Dorothy](https://github.com/Charlie85270/Dorothy) - Desktop app combining orchestration with automations, kanban, and MCP servers.
+- [Dray](https://github.com/monorepo-labs/dray) - Desktop app that wraps CLI coding agents in a native chat interface, giving each session its own git worktree, diff view, and PR/issue panels, with a CLI for agents to message other sessions. `Backends: Claude Code, Codex, Pi`
 - [Emdash](https://github.com/generalaction/emdash) - Agentic dev environment running multiple agents in parallel worktrees, locally or over SSH. `Backends: Claude Code, Codex, Cursor, OpenCode, Amp, Devin, Droid, Copilot`
 - [Executive](https://github.com/ncr5012/executive) - Real-time dashboard for orchestrating many Claude Code sessions. `Backends: Claude Code` `⚠️ unmaintained`
 - [factory-factory](https://github.com/purplefish-ai/factory-factory) - Workspace-based environment for running multiple Claude Code and Codex sessions in parallel. `Backends: Claude Code, Codex`
@@ -265,6 +270,7 @@ Run many agent sessions at once, each in its own worktree, and review their outp
 - [herdr](https://github.com/herdrdev/herdr) - Background runtime that owns agent terminals. Sessions survive reboot and agents spawn panes and message each other over a socket API.
 - [Hive](https://github.com/morapelker/hive) - Project and worktree manager built for multitasking with agents.
 - [IM.codes](https://github.com/im4codes/imcodes) - Messaging layer connecting agents to each other and to your machines: shared memory, multi-agent review, and remote control from any device. `Backends: Claude Code, Codex, Gemini, and more`
+- [Intent](https://github.com/intent-hq/intent) - Monorepo for a desktop app, with daemon and iOS components, for coordinating multiple coding agents.
 - [Ivy Tendril](https://github.com/Ivy-Interactive/Ivy-Tendril) - Plan-based agent lifecycle with verification gates and self-improving memory.
 - [Jean](https://github.com/coollabsio/jean) - Tauri desktop dev environment for running several coding-agent CLIs across projects and worktrees, locally or headless. `Backends: Claude Code, Codex, Cursor, OpenCode, Pi, Grok, Kimi`
 - [Kaban](https://github.com/kaban-board/kaban) - Minimal terminal kanban for coding agents. `⚠️ unmaintained`
@@ -296,6 +302,9 @@ Run many agent sessions at once, each in its own worktree, and review their outp
 - [Proliferate](https://github.com/proliferate-ai/proliferate) - Agent IDE that runs sessions locally or in the cloud, with reusable workflows.
 - [Prowl](https://github.com/onevcat/Prowl) - Native macOS terminal with a canvas view of several live agent sessions and worktree-based tabs. `Backends: Claude Code, Codex`
 - [qm](https://github.com/yc-software/qm) - Y Combinator's multiplayer harness: an isolated workspace per teammate, shared Slack channels, driven from the web.
+- [ReevesAgents](https://github.com/mertkayacs/reevesagents) - Local tmux-based workspace for running multiple AI coding CLIs side by side, controllable via CLI, TUI, web UI, or an MCP server that lets one agent spawn and steer others. `Backends: Claude Code, Codex, OpenCode, Hermes, Kimi`
+- [Roamgate](https://github.com/powerfooI/roamgate) - Browser-based client for the Herdr terminal server that lets you control terminals, monitor coding agents, and review files and diffs from desktop or mobile.
+- [Rove](https://github.com/Sma1lboy/rove) - Terminal-based workspace that runs several coding agents in parallel, giving each task its own git worktree and branch, with a scriptable API and plugin system. `Backends: Claude Code, Codex, Copilot`
 - [Runner](https://github.com/yicheng47/runner) - Native desktop app that spawns a "crew" of coding agents at once, each in its own terminal pane, with a shared event feed. `Backends: Claude Code, Codex, TRAE CLI`
 - [Sculptor](https://github.com/imbue-ai/sculptor) - Desktop app that runs agents in parallel Docker containers with a pairing mode to sync work into your IDE. By Imbue. `Backends: Claude Code, Pi, any terminal agent`
 - [Squad (bradygaster)](https://github.com/bradygaster/squad) - Copilot-based lead, frontend, backend, and tester agents that live in the repo as files, with knowledge compounding through committed decisions. `Backends: Copilot`
@@ -309,15 +318,18 @@ Run many agent sessions at once, each in its own worktree, and review their outp
 - [Termany](https://github.com/thinkany-ai/termany) - Agent-native terminal that runs five or more coding-agent sessions at once with status tags, cost tracking, and per-pane SSH. `Backends: Claude, Codex, Gemini, and more`
 - [Termic](https://github.com/simion/termic) - Open-source Conductor alternative that spawns real CLI binaries, one worktree per agent.
 - [Terragon OSS](https://github.com/terragon-labs/terragon-oss) - Source of the remote background-agent orchestrator, released when the company shut down in February 2026. `⚠️ unmaintained`
+- [tlbx](https://github.com/tlbx-ai/tlbx) - Self-hosted terminal and browser multiplexer for persistent shells and coding agents across Windows, macOS, and Linux.
 - [tmux-ide](https://github.com/wavyrai/tmux-ide) - Visual app shell over ordinary tmux sessions, adding agent-status indicators while tmux keeps handling processes and persistence.
 - [Toad](https://github.com/batrachianai/toad) - Unified terminal interface for running several CLI agents.
 - [Traycer](https://github.com/traycerai/traycer) - Bring-your-own-agent workspace with shared context across models, agent-to-agent messaging, and shareable boards.
+- [tuios](https://github.com/Gaurav-Gosain/tuios) - Terminal multiplexer and window manager with daemon-backed persistent sessions that tracks coding agents across panes and surfaces what they need in a unified inbox. `Backends: Claude Code, Codex`
 - [ultraswarm](https://github.com/fubak/ultraswarm) - Multi-CLI swarm orchestrated by Claude Code: external CLIs code in isolated worktrees, Claude verifies and merges. `Backends: Claude Code and others`
 - [uzi](https://github.com/devflowinc/uzi) - CLI for running large numbers of agents in parallel worktrees. `⚠️ unmaintained`
 - [Vibe Kanban](https://github.com/BloopAI/vibe-kanban) - Kanban board to plan, run, and review many agent tasks, each in its own worktree, with built-in code review and PR creation. Bloop has shut down and the project is now community-maintained. `Backends: Claude Code, Codex, Gemini CLI, Copilot, Amp, Cursor, OpenCode, Droid, Qwen Code`
 - [Vibeyard](https://github.com/elirantutia/vibeyard) - Desktop workspace for AI coding agents with a widget dashboard, per-project kanban, and swarm mode for running several sessions at once. `Backends: Claude Code, Codex, Gemini CLI`
 - [Vicoa](https://github.com/vicoa-ai/vicoa) - Self-hostable agentic IDE for running a team of coding agents from desktop, mobile, or a VPS, each on its own worktree. `Backends: Claude Code, Codex, OpenCode, Gemini, Cursor, Copilot, and more`
 - [Wit](https://github.com/amaar-mc/wit) - Coordination protocol that declares intent, locks the functions being touched via Tree-sitter, and detects conflicts before code is written. `⚠️ unmaintained`
+- [wmux](https://github.com/openwong2kim/wmux) - Desktop app for running fleets of AI coding agents side by side, each in its own pane, with a background daemon keeping sessions alive.
 - [Xum](https://github.com/coder/xum) - Coder's desktop app for isolated parallel agentic work across local, worktree, and SSH workspaces. Formerly Mux. `Backends: Claude, GPT, Grok, Ollama, OpenRouter`
 - [YYLO](https://github.com/yylo-dev/yylo) - Command-line orchestrator that runs each coding-agent task in its own branch and worktree, keeps the kanban board in a git-native ledger, and reviews changes by risk in a merge queue before merging. `Backends: Pi, Codex`
 - [Zeron](https://github.com/zeronsh/zeron) - Cross-device control plane that syncs sessions through an always-on daemon. Formerly comet. `Backends: Claude Code, Codex, Cursor, Devin, and others`
@@ -438,6 +450,7 @@ What checks agent output before it ships.
 Frameworks that model a software team as a set of agents. Older than the factory term, but the same idea.
 
 - [Agency Swarm](https://github.com/VRSEN/agency-swarm) - Role-based agent teams with defined communication flows on the OpenAI Agents SDK.
+- [Agent Swarm](https://github.com/desplega-ai/agent-swarm) - Self-hosted platform where a lead agent delegates work to worker coding agents running in isolated Docker containers, with shared memory and review gates. `Backends: Claude Code, Codex`
 - [Agent Teams](https://github.com/777genius/agent-teams-ai) - Desktop app that gives high-level commands to coding-agent teams across 75+ providers, with inter-agent messaging and built-in review.
 - [Agentlas OS](https://github.com/agentlas-ai/Agentlas-OS) - Keeps specialist agents in a hub and spins up a temporary orchestrator per task, with routing cards and permission contracts that survive between sessions. `Backends: Claude Code, Codex, Gemini, and others`
 - [AgentsMesh](https://github.com/AgentsMesh/AgentsMesh) - Remote workstations with PTY sandboxes and worktree isolation, coordinating through channels, with a kanban tied to MRs and PRs.
@@ -454,9 +467,11 @@ Frameworks that model a software team as a set of agents. Older than the factory
 - [Fusion Harness](https://github.com/disler/fusion-harness) - Fuses 2-5 frontier models into one architect/builder pipeline with debate and merged plans, instead of racing them separately. `Backends: Pi`
 - [GPT-Engineer](https://github.com/AntonOsika/gpt-engineer) - Spec to code from the CLI. The precursor to Lovable. Archived. `⚠️ unmaintained`
 - [GPT-Pilot](https://github.com/Pythagora-io/gpt-pilot) - Builds an app through spec writer, architect, developer, reviewer, and debugger agents. The README reports malicious code was found in the repo between August 2025 and June 2026; rotate credentials if you ran it then. `⚠️ unmaintained`
+- [GraphCode](https://github.com/scgopi/GraphCode) - macOS app and background daemon for running, connecting, and steering several live coding-agent sessions as a graph of loops.
 - [HarnessRouter](https://github.com/HarnessRouter/harnessrouter) - Self-hosted unified API for running several harnesses through one control plane. `Backends: Codex, Claude Code, Hermes, Pi, DeepSeek Harness`
 - [Hive (Aden)](https://github.com/aden-hive/hive) - Compiles multi-agent objectives into deterministic execution DAGs with crash recovery, cost enforcement, and human-in-the-loop.
 - [kodo](https://github.com/ikamensh/kodo) - Directs agents through work cycles where a separate agent independently verifies each result.
+- [Markus](https://github.com/markus-global/markus) - Self-hostable, Apache-2.0 platform that turns a plain-language goal into a coordinated team of AI coding agents.
 - [MetaGPT](https://github.com/FoundationAgents/MetaGPT) - Gives agents PM, architect, engineer, and QA roles following SOPs to turn a one-line requirement into a project. `⚠️ unmaintained`
 - [multi-agent-shogun](https://github.com/yohey-w/multi-agent-shogun) - A shogun, karo, and ashigaru hierarchy running up to 10 agents over tmux.
 - [NXTG-Forge Orchestrator](https://github.com/nxtg-ai/forge-orchestrator) - Research, plan, delegate, adversarially verify, deploy across Claude Code, Codex, and Gemini CLI on one repo, with file locking and drift detection.
@@ -469,6 +484,7 @@ Frameworks that model a software team as a set of agents. Older than the factory
 - [OtoDock](https://github.com/OtoDock/oto-dock) - Self-hosted "company OS" where agents work in departments and delegate to each other unwatched. Source-available.
 - [outsourcerer](https://github.com/alexgreensh/outsourcerer) - Routes coding jobs across several agent platforms by capability and cost, carrying your skills and MCP servers with the job. `Backends: Claude, Codex, Cursor, Devin, Gemini, OpenRouter`
 - [paperclip](https://github.com/paperclipai/paperclip) - Orchestration for "zero-human companies": agents wake on heartbeats, claim tickets, and are governed by org charts, budgets, and approval gates.
+- [Rovai](https://github.com/murray17/rovai-ai) - Desktop and web workspace where teams of AI coding agents share conversations, divide up tasks, and keep collaborative memory.
 - [SAFe Agentic Workflow (SAW)](https://github.com/bybren-llc/safe-agentic-workflow) - Maps SAFe (Scaled Agile) roles onto multi-agent teams: 11 agent profiles, quality gates, and evidence-based delivery. `Backends: Claude Code, Gemini CLI, Codex CLI, Cursor IDE`
 - [scion](https://github.com/GoogleCloudPlatform/scion) - Google Cloud's orchestration testbed that runs agents in parallel isolated containers with dynamic coordination.
 - [Swarms](https://github.com/kyegomez/swarms) - Sequential, concurrent, and hierarchical multi-agent orchestration.
