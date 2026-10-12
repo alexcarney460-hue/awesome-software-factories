@@ -88,7 +88,7 @@ End-to-end systems: work comes in from a backlog, agents plan, build, test, and 
 - [OpenFactory](https://github.com/Open-Factory-Digital/openfactory-core) - Tickets in, reviewed pull requests out. Self-hosted, no vendor lock-in.
 - [Optio](https://github.com/jonwiggins/optio) - Self-hosted engineering platform. Tickets from GitHub, Linear, Jira, or Notion become merged PRs through a Kubernetes-style reconciliation control plane, plus one-shot jobs and long-lived agents. `Backends: Claude Code, Codex, Copilot, Gemini, OpenCode, Cursor`
 - [Orbi](https://github.com/orbi-build/orbi) - "The factory that builds and operates AI software factories." GitHub issues in, runnable systems out.
-- [Paddock](https://github.com/racecraft-lab/Paddock) - GitHub-issue-driven control plane with isolated sandboxes, governance, artifacts, and human review.
+- [Paddock](https://github.com/racecraft-lab/Paddock) - GitHub-issue-driven control plane with isolated sandboxes, governance, artifacts, and human review. `⚠️ unmaintained`
 - [Patchmill](https://github.com/rochecompaan/patchmill) - Agent-driven software factory with daily development.
 - [Ramure](https://github.com/fulcrumresearch/ramure) - Library for structuring and running multi-agent coding workflows, pitched as "build your own software factory." Formerly Druids.
 - [Sgai](https://github.com/sandgardenhq/sgai) - Sandgarden's local factory. Define the outcome in a single `GOAL.md` and a coordinated set of agents builds it, with a web dashboard showing what each agent is doing.
@@ -214,7 +214,7 @@ Run many agent sessions at once, each in its own worktree, and review their outp
 - [Aperant](https://github.com/AndyMik90/Aperant) - Up to 12 agent terminals in parallel worktrees, a self-validating QA loop, and AI-assisted merge-conflict resolution. `⚠️ unmaintained`
 - [Arbor](https://github.com/penso/arbor) - Minimalist native desktop app built around worktrees, terminals, and diffs.
 - [async-code](https://github.com/ObservedObserver/async-code) - Codex-style web UI for running Claude Code and Codex on multiple tasks in parallel. `⚠️ unmaintained`
-- [automaker](https://github.com/AutoMaker-Org/automaker) - Kanban board that turns tickets into working code, each card in its own worktree with tests run and committed automatically.
+- [automaker](https://github.com/AutoMaker-Org/automaker) - Kanban board that turns tickets into working code, each card in its own worktree with tests run and committed automatically. `⚠️ unmaintained`
 - [bb](https://github.com/get-bb/bb) - Self-controlling agentic IDE that orchestrates agents in live threads from desktop, web, CLI, or HTTP API.
 - [Berd](https://github.com/block/berd) - Block's open-source desktop app for working with any model-backed coding agent, built on a Goose backend sidecar.
 - [Camelot](https://github.com/T0ha/camelot) - Kanban-based coding agent orchestrator in Elixir, built on KISS.
@@ -362,7 +362,7 @@ Give each agent its own branch, container, or VM so many can work at once safely
 - [packnplay](https://github.com/obra/packnplay) - Launches Claude Code, Codex, or Gemini in per-worktree Docker containers with dev-container management. By Jesse Vincent. `Backends: Claude Code, Codex, Gemini CLI` `⚠️ unmaintained`
 - [Parallel Code](https://github.com/johannesjo/parallel-code) - Dispatches agents in parallel, one worktree and branch each. `Backends: Claude Code, Codex, Gemini CLI, Copilot CLI, Antigravity CLI`
 - [parallel-worktrees](https://github.com/SpillwaveSolutions/parallel-worktrees) - Claude Code skill for parallel worktree workflows. `Backends: Claude Code` `⚠️ unmaintained`
-- [Sandbox Agent](https://github.com/rivet-dev/sandbox-agent) - Server that runs inside a sandbox and lets you control a coding agent remotely over HTTP with a normalized event stream. `Backends: Claude Code, Codex, OpenCode, Cursor, Amp, Pi`
+- [Sandbox Agent](https://github.com/rivet-dev/agents) - Server that runs inside a sandbox and lets you control a coding agent remotely over HTTP with a normalized event stream. `Backends: Claude Code, Codex, OpenCode, Cursor, Amp, Pi`
 - [Sandbox Runtime (srt)](https://github.com/anthropics/sandbox-runtime) - Anthropic's container-free OS-level sandboxing (Seatbelt on macOS, bubblewrap on Linux) for Claude Code and MCP servers.
 - [Sandcastle](https://github.com/mattpocock/sandcastle) - TypeScript library for orchestrating agents inside Docker, Podman, or Vercel sandboxes.
 - [smolvm](https://github.com/smol-machines/smolvm) - Portable libkrun microVM with deny-by-default egress and brokered secrets.
@@ -674,7 +674,9 @@ First-hand accounts from teams that built and ran a factory.
 - [Harness Engineering is not Enough: Why Software Factories Fail](https://www.youtube.com/watch?v=Ib5GBkD555M) - Dex Horthy, AI Engineer World's Fair, July 2026. Argues lights-off factories fail because models cannot yet judge codebase maintainability, and recommends heavier upfront planning with humans still reading the code.
 - [Why software factories fail without humans](https://linearb.io/dev-interrupted/podcast/why-software-factories-fail-humanlayer-warp-linearb) - Dev Interrupted roundtable with Dex Horthy, Aloke Desai, and Dan Lines, September 2026. Covers who owns PRs, measuring cost per effective merged PR and rework, and incident response as the last frontier.
 - [The rise of software factories, the fall of first drafts, and the hidden tax holding back your agents](https://linearb.io/dev-interrupted/podcast/dark-software-factories-orchestrators-tax-agentic-compute) - Ben Lloyd Pearson and Andrew Zigler, Dev Interrupted, July 2026. Sets the view that only 20-30% of issues can be automated against the case for maintainability and the orchestrator's "context pollution" tax.
+- [Inside the Dark Factory: AI That Ships Code Solo](https://tessl.io/podcast/116) - Rob Willoughby, The AI Native Dev, July 2026. Tessl's own AI engineering lead describes how its internal Dark Factory ships code through entire weekends and how the team built enough trust to let it run unattended.
 - [Every Repo Is a Software Factory Now](https://tessl.io/podcast/119) - Don Syme, The AI Native Dev, August 2026. Covers continuous AI and GitHub Agentic Workflows: bounded context, quality gates before human review, and cost control.
+- [850 PRs a Week: How Tessl Runs a Software Factory](https://tessl.io/podcast/121) - Dru Knox, The AI Native Dev, September 2026. Tessl's factory peaked at 850 PRs in one week with 85-90% handled end to end by agents, and the changes that mattered most were not the speed gains the team expected.
 
 ## Books
 
