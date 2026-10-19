@@ -65,7 +65,7 @@ End-to-end systems: work comes in from a backlog, agents plan, build, test, and 
 - [Foreman](https://github.com/VisionForge-OU/foreman) - TUI that supervises headless Claude Code agents through a gated delivery pipeline. `Backends: Claude Code`
 - [Forge](https://github.com/LucasDuys/forge) - Brainstorm-to-commit pipeline for Claude Code: a one-line idea becomes a tested, reviewed, committed branch. `Backends: Claude Code`
 - [Forgeo](https://github.com/lucaGazzola/forgeo) - Scheduled factory that keeps the backlog as a plain JSON file, runs an agent on each task, and commits straight to main. No branches, no PRs. `Backends: Claude Code, Codex, OpenCode`
-- [Foundry](https://github.com/ai-supervisor-foundry/foundry) - Persistent control plane that resumes agent work across multi-day projects without losing context.
+- [Foundry](https://github.com/ai-supervisor-foundry/foundry) - Persistent control plane that resumes agent work across multi-day projects without losing context. `⚠️ unmaintained`
 - [Fusion](https://github.com/Runfusion/Fusion) - "Your software factory." Multi-node orchestrator with a kanban board, plan-review-execute gates, per-task worktrees, and hierarchical missions.
 - [Gas City](https://github.com/gastownhall/gascity) - Gas Town's reusable parts repackaged as a composable SDK: declarative config, work routing, and health monitoring for building your own agent factory. `Backends: Claude Code, Codex, Gemini CLI`
 - [Gas Town](https://github.com/gastownhall/gastown) - Steve Yegge's multi-agent orchestrator. A Mayor dispatches work to colonies of 20-30 parallel agents, with Witness and Deacon roles supervising, and Beads as memory. `Backends: Claude Code, Codex, Copilot, Gemini, Cursor, Kiro, Amp, OpenCode, and more`
@@ -121,7 +121,7 @@ Tools that watch an issue tracker or event stream and dispatch agents to open pu
 - [codex-action](https://github.com/openai/codex-action) - OpenAI's official GitHub Action for running Codex from a workflow with tight control over its privileges. `Backends: Codex`
 - [Contrabass](https://github.com/junhoyeo/contrabass) - Go reimplementation of the Symphony pattern. Pulls from Linear, GitHub Issues, or a local board into isolated worktrees.
 - [Cyrus](https://github.com/cyrusagents/cyrus) - Background agent that watches issues assigned to it in Linear, GitHub, GitLab, or Slack and works each in its own worktree.
-- [factory-agent](https://github.com/BayramAnnakov/factory-agent) - Linear issue to Claude Managed Agents to GitHub PR. About one dollar and three minutes per feature. `Backends: Claude Managed Agents`
+- [factory-agent](https://github.com/BayramAnnakov/factory-agent) - Linear issue to Claude Managed Agents to GitHub PR. About one dollar and three minutes per feature. `Backends: Claude Managed Agents` `⚠️ unmaintained`
 - [GitHub Agentic Workflows (gh-aw)](https://github.com/github/gh-aw) - GitHub's own tool. Markdown plus YAML agentic workflows compile to locked-down GitHub Actions with sandboxed agents and validated "safe outputs."
 - [groundcrew](https://github.com/ClipboardHealth/groundcrew) - Dispatches a task backlog to local agents, one sandboxed worktree per task.
 - [harness-kanban](https://github.com/Orenoid/harness-kanban) - Cloud kanban for fully containerized agents running around the clock on assigned issues.
@@ -162,7 +162,6 @@ The "Ralph Wiggum" pattern: feed an agent the same prompt in a loop, with tests 
 - [gralph](https://github.com/frizynn/gralph) - Ralph loop with git-worktree isolation and multi-agent scaling. `Backends: Claude Code, Cursor` `⚠️ unmaintained`
 - [lalph](https://github.com/tim-smart/lalph) - Source-agnostic Ralph-style loop.
 - [LongHorizon-Harness](https://github.com/AMAP-ML/LongHorizon-Harness) - Long-running harness that splits work into manager, executor, and auditor roles so only independently verified results persist.
-- [loom](https://github.com/ghuntley/loom) - Geoffrey Huntley's own infrastructure for autonomous multi-agent loops. The README says it is for his use only, so treat it as a reference, not a tool. `⚠️ unmaintained`
 - [Loop Engineering (cobusgreyling)](https://github.com/cobusgreyling/loop-engineering) - Seven production loop patterns plus CLI tools that score readiness, scaffold state, estimate cost, detect drift, and isolate worktrees.
 - [loop-engineering](https://github.com/selmakcby/loop-engineering) - Claude Code skill for a self-running loop gated by a verification check the agent cannot fool, plus a max-turns budget. `Backends: Claude Code`
 - [loopgate_harness](https://github.com/rxdt/loopgate_harness) - Repo-native loop where each iteration must update specs and pass gates before it commits.
@@ -171,8 +170,9 @@ The "Ralph Wiggum" pattern: feed an agent the same prompt in a loop, with tests 
 - [MartinLoop](https://github.com/Keesan12/martin-loop) - Wraps coding-agent runs with budget caps, verification gates, iteration limits, and signed run receipts. `Backends: Claude Code, Codex, Gemini, and OpenAI-compatible endpoints`
 - [OMK](https://github.com/dmae97/omk) - Evidence-gated runner that routes tasks into scoped DAG lanes with replayable artifacts. `Backends: Codex, Claude Code, OpenCode`
 - [Open Ralph Wiggum](https://github.com/Th0rgal/open-ralph-wiggum) - `ralph "prompt"` starts a loop on any of several backends. `Backends: OpenCode, Claude Code, Codex, Copilot CLI, Cursor Agent, Qwen Code`
+- [Overalls](https://github.com/ghuntley/overalls) - Geoffrey Huntley's "AI-first developer platform you own," the rebuild of his earlier loom infrastructure for autonomous multi-agent loops. Launching November 2026.
 - [overnight](https://github.com/yail259/overnight) - Queue Claude Code tasks, run them overnight, wake up to results. `Backends: Claude Code` `⚠️ unmaintained`
-- [ProofLoop](https://github.com/exiw-ai/proofloop) - Write a definition of done once. The orchestrator plans, executes, and verifies in a loop until the contract is satisfied. `Backends: OpenCode, Codex, Claude Code`
+- [ProofLoop](https://github.com/exiw-ai/proofloop) - Write a definition of done once. The orchestrator plans, executes, and verifies in a loop until the contract is satisfied. `Backends: OpenCode, Codex, Claude Code` `⚠️ unmaintained`
 - [ralph (aymenfurter)](https://github.com/aymenfurter/ralph) - Ralph loop for GitHub Copilot as a VS Code extension with a visual control panel. `Backends: Copilot` `⚠️ unmaintained`
 - [ralph (iannuttall)](https://github.com/iannuttall/ralph) - Minimal file-based loop: each iteration starts fresh, reads on-disk state, commits one story. Archived. `Backends: Codex, Claude, Droid, OpenCode` `⚠️ unmaintained`
 - [ralph (snarktank)](https://github.com/snarktank/ralph) - The minimal PRD-driven loop most others copy: read PRD and progress file, do one item, test, commit, repeat. `Backends: Amp, Claude Code` `⚠️ unmaintained`
@@ -180,7 +180,7 @@ The "Ralph Wiggum" pattern: feed an agent the same prompt in a loop, with tests 
 - [ralph-loop (syuya2036)](https://github.com/syuya2036/ralph-loop) - Agent-agnostic Ralph that also works with local Ollama models. `⚠️ unmaintained`
 - [ralph-loop-agent](https://github.com/vercel-labs/ralph-loop-agent) - Vercel Labs' Ralph loop built on the AI SDK.
 - [ralph-orchestrator](https://github.com/mikeyobrien/ralph-orchestrator) - Ralph with a "hat system" of personas, back-pressure gates for tests, lint, and typecheck, and Telegram check-ins. `Backends: Claude Code, Codex, Gemini CLI, Kiro, OpenCode, Copilot CLI, Amp`
-- [ralph-starter](https://github.com/rubenmarcus/ralph-starter) - Bootstraps a Ralph loop from Figma, Linear, Notion, or GitHub specs, with cost tracking.
+- [ralph-starter](https://github.com/rubenmarcus/ralph-starter) - Bootstraps a Ralph loop from Figma, Linear, Notion, or GitHub specs, with cost tracking. `⚠️ unmaintained`
 - [ralph-tui](https://github.com/subsy/ralph-tui) - TUI that drives an agent through a task list with exit detection, connected to task trackers, with interactive PRD creation.
 - [ralph-wiggum plugin](https://github.com/anthropics/claude-code/tree/main/plugins/ralph-wiggum) - Anthropic's official Claude Code plugin. A Stop hook blocks exit and re-feeds the prompt until a completion string or iteration cap. `Backends: Claude Code`
 - [ralph-wiggum-cursor](https://github.com/agrimsingh/ralph-wiggum-cursor) - Ralph loop for Cursor CLI with token tracking and context rotation. `Backends: Cursor` `⚠️ unmaintained`
@@ -363,6 +363,7 @@ Give each agent its own branch, container, or VM so many can work at once safely
 - [forkd](https://github.com/deeplethe/forkd) - MicroVM sandbox runtime that forks copy-on-write children from a warm parent in about 100ms, for agent fan-out and eval harnesses.
 - [Git Worktree Runner (gtr)](https://github.com/coderabbitai/git-worktree-runner) - Portable worktree CLI that automates per-branch setup with AI tool integration.
 - [gwm-cli](https://github.com/kbrdn1/gwm-cli) - Rust CLI and TUI git worktree manager that bootstraps project setup, links issues, and shows which AI agent is working where.
+- [gwq](https://github.com/d-kuro/gwq) - Fuzzy-finder git worktree CLI with a status dashboard and tmux integration, built with running parallel AI coding agents as a primary use case.
 - [Katakate (k7)](https://github.com/Katakate/k7) - Self-hosted VM sandbox infrastructure with CLI, API, and Python SDK.
 - [Kubernetes Agent Sandbox](https://github.com/kubernetes-sigs/agent-sandbox) - Official Kubernetes SIG custom resource for declarative isolated agent runtimes, backed by gVisor or Kata.
 - [Landrun](https://github.com/Zouuup/landrun) - Runs any Linux process in an unprivileged Landlock sandbox, kernel-native.
@@ -460,6 +461,7 @@ Frameworks that model a software team as a set of agents. Older than the factory
 - [Agent Teams](https://github.com/777genius/agent-teams-ai) - Desktop app that gives high-level commands to coding-agent teams across 75+ providers, with inter-agent messaging and built-in review.
 - [Agentlas OS](https://github.com/agentlas-ai/Agentlas-OS) - Keeps specialist agents in a hub and spins up a temporary orchestrator per task, with routing cards and permission contracts that survive between sessions. `Backends: Claude Code, Codex, Gemini, and others`
 - [AgentsMesh](https://github.com/AgentsMesh/AgentsMesh) - Remote workstations with PTY sandboxes and worktree isolation, coordinating through channels, with a kanban tied to MRs and PRs.
+- [Antfarm](https://github.com/snarktank/antfarm) - Installs a team of specialist agents (planner, developer, verifier, tester, reviewer) into OpenClaw with one command, with automatic retries and an independent verifier checking each story against acceptance criteria. `Backends: OpenClaw`
 - [AutoGen](https://github.com/microsoft/autogen) - Microsoft's multi-agent framework. In maintenance mode, new work goes to Agent Framework. `⚠️ unmaintained`
 - [buzz](https://github.com/block/buzz) - Block's agents as first-class members of shared channels with their own keys and audit trails, over a Nostr relay you own. `Backends: Claude Code, Codex, Goose`
 - [ChatDev](https://github.com/OpenBMB/ChatDev) - Simulates a software company where CEO, CTO, programmer, and tester agents design, code, test, and document.
@@ -592,6 +594,7 @@ First-hand accounts from teams that built and ran a factory.
 - [Trying the software factory pattern](https://lethain.com/software-factory-experiment/) - Will Larson, September 2026. An agent-driven loop at Imprint that audits a Linear project's goals against RFCs and dashboards, works unblocked tasks, and re-runs when goals drift.
 - [Beyond AI Coding Agents: How We Built Augment's Software Factory](https://www.augmentcode.com/blog/beyond-ai-coding-agents-how-we-built-augments-software-factory) - Akshay Utture, Augment Code, September 2026. Deployed agents at each SDLC bottleneck across 17,200 merged PRs, cutting median time to merge from 11.2 hours to 3.1 hours and the 14-day revert rate by 79%.
 - [Inside OpenAI's agentic software factory](https://newsletter.pragmaticengineer.com/p/openai-software-factory) - Gergely Orosz, The Pragmatic Engineer, September 2026. Based on interviews with OpenAI engineering leaders, describes Codex-driven code generation and review, a "Perf Factory" for performance regressions, and "Sevbot" incident response handling a 10x rise in pull requests.
+- [WarpBench: How we reduced our cost-per-PR 75%](https://www.warp.dev/blog/warpbench-case-study-reduce-cost-per-pr) - Zach Lloyd, Warp, September 2026. Built an internal benchmark from Warp's own tasks to compare factory configurations; switching the default model cut cost per completed PR from about $80 to $30 with no drop in merge rate.
 - [What we learned at the Background Agents summit](https://ona.com/stories/background-agents-summit) - Siddhant Khare and Benjamin Stark, Ona, May 2026. Recap of 13 sessions (Stripe, Uber, Monzo, and others) finding that teams arrived separately at five shared primitives: sandboxes, context, triggers, fleet orchestration, and governance.
 
 ## Essays
@@ -730,7 +733,7 @@ How to measure whether a factory works.
 - [awesome-ralph](https://github.com/snwfdhmp/awesome-ralph) - Everything about the Ralph loop. `⚠️ unmaintained`
 - [awesome-ai-agents](https://github.com/e2b-dev/awesome-ai-agents) - Autonomous agents in general.
 - [awesome-mcp-servers](https://github.com/punkpeye/awesome-mcp-servers) - MCP servers.
-- [awesome-vibe-coding](https://github.com/filipecalegario/awesome-vibe-coding) - Vibe coding references.
+- [awesome-vibe-coding](https://github.com/filipecalegario/awesome-vibe-coding) - Vibe coding references. `⚠️ unmaintained`
 
 ## Contributing
 
