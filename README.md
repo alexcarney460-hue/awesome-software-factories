@@ -303,6 +303,7 @@ Run many agent sessions at once, each in its own worktree, and review their outp
 - [Prowl](https://github.com/onevcat/Prowl) - Native macOS terminal with a canvas view of several live agent sessions and worktree-based tabs. `Backends: Claude Code, Codex`
 - [qm](https://github.com/yc-software/qm) - Y Combinator's multiplayer harness: an isolated workspace per teammate, shared Slack channels, driven from the web.
 - [ReevesAgents](https://github.com/mertkayacs/reevesagents) - Local tmux-based workspace for running multiple AI coding CLIs side by side, controllable via CLI, TUI, web UI, or an MCP server that lets one agent spawn and steer others. `Backends: Claude Code, Codex, OpenCode, Hermes, Kimi`
+- [Repowire](https://github.com/prassanna-ravishankar/repowire) - Local control layer that lets running coding agents discover each other and message across projects, with a browser, Telegram, or Slack dashboard. `Backends: Claude Code, Codex, OpenCode, Pi`
 - [Roamgate](https://github.com/powerfooI/roamgate) - Browser-based client for the Herdr terminal server that lets you control terminals, monitor coding agents, and review files and diffs from desktop or mobile.
 - [Rove](https://github.com/Sma1lboy/rove) - Terminal-based workspace that runs several coding agents in parallel, giving each task its own git worktree and branch, with a scriptable API and plugin system. `Backends: Claude Code, Codex, Copilot`
 - [Runner](https://github.com/yicheng47/runner) - Native desktop app that spawns a "crew" of coding agents at once, each in its own terminal pane, with a shared event feed. `Backends: Claude Code, Codex, TRAE CLI`
@@ -378,8 +379,8 @@ Give each agent its own branch, container, or VM so many can work at once safely
 - [Overalls](https://github.com/ghuntley/overalls) - Geoffrey Huntley's self-hosted platform of persistent Firecracker microVMs for development machines, with Claude Code and Codex preinstalled and a built-in agent that keeps working after you close your laptop. Formerly loom. Research preview, launching November 2026.
 - [packnplay](https://github.com/obra/packnplay) - Launches Claude Code, Codex, or Gemini in per-worktree Docker containers with dev-container management. By Jesse Vincent. `Backends: Claude Code, Codex, Gemini CLI` `⚠️ unmaintained`
 - [Parallel Code](https://github.com/johannesjo/parallel-code) - Dispatches agents in parallel, one worktree and branch each. `Backends: Claude Code, Codex, Gemini CLI, Copilot CLI, Antigravity CLI`
-- [parallel-worktrees](https://github.com/SpillwaveSolutions/parallel-worktrees) - Claude Code skill for parallel worktree workflows. `Backends: Claude Code` `⚠️ unmaintained`
-- [pi pod](https://github.com/pi-pod/pipod) - Self-hostable server and CLI that runs Pi coding-agent sessions in isolated remote sandboxes on a machine you control. `Backends: Pi`
+- [parallel-worktrees](https://github.com/SpillwaveSolutions/parallel-worktrees) - Claude Code skill for parallel worktree workflows. `Backends: Claude Code`
+- [pi pod](https://github.com/pi-pod/pipod) - Self-hostable server and CLI that runs Pi coding-agent sessions in isolated remote sandboxes on a machine you control. `Backends: Pi` `⚠️ unmaintained`
 - [Sandbox Agent](https://github.com/rivet-dev/agents) - Server that runs inside a sandbox and lets you control a coding agent remotely over HTTP with a normalized event stream. `Backends: Claude Code, Codex, OpenCode, Cursor, Amp, Pi`
 - [Sandbox Runtime (srt)](https://github.com/anthropics/sandbox-runtime) - Anthropic's container-free OS-level sandboxing (Seatbelt on macOS, bubblewrap on Linux) for Claude Code and MCP servers.
 - [Sandcastle](https://github.com/mattpocock/sandcastle) - TypeScript library for orchestrating agents inside Docker, Podman, or Vercel sandboxes.
@@ -476,7 +477,7 @@ Frameworks that model a software team as a set of agents. Older than the factory
 - [Devika](https://github.com/stitionai/devika) - Open Devin alternative that breaks instructions into steps, researches, and writes code. `⚠️ unmaintained`
 - [Fusion Harness](https://github.com/disler/fusion-harness) - Fuses 2-5 frontier models into one architect/builder pipeline with debate and merged plans, instead of racing them separately. `Backends: Pi`
 - [GPT-Engineer](https://github.com/AntonOsika/gpt-engineer) - Spec to code from the CLI. The precursor to Lovable. Archived. `⚠️ unmaintained`
-- [GPT-Pilot](https://github.com/Pythagora-io/gpt-pilot) - Builds an app through spec writer, architect, developer, reviewer, and debugger agents. The README reports malicious code was found in the repo between August 2025 and June 2026; rotate credentials if you ran it then.
+- [GPT-Pilot](https://github.com/Pythagora-io/gpt-pilot) - Builds an app through spec writer, architect, developer, reviewer, and debugger agents. The README reports malicious code was found in the repo between August 2025 and June 2026; rotate credentials if you ran it then. `⚠️ unmaintained`
 - [GraphCode](https://github.com/scgopi/GraphCode) - macOS app and background daemon for running, connecting, and steering several live coding-agent sessions as a graph of loops.
 - [HarnessRouter](https://github.com/HarnessRouter/harnessrouter) - Self-hosted unified API for running several harnesses through one control plane. `Backends: Codex, Claude Code, Hermes, Pi, DeepSeek Harness`
 - [Hive (Aden)](https://github.com/aden-hive/hive) - Compiles multi-agent objectives into deterministic execution DAGs with crash recovery, cost enforcement, and human-in-the-loop.
@@ -694,6 +695,8 @@ First-hand accounts from teams that built and ran a factory.
 - [Simon Willison: Engineering practices that make coding agents work](https://www.youtube.com/watch?v=owmJyKVu5f8) - The Pragmatic Summit.
 - [The Era of Compound Engineering](https://www.youtube.com/watch?v=_ehJyfHg1Vk) - Kieran Klaassen, AI Engineer.
 - [Code with Claude 2026 opening keynote](https://www.youtube.com/watch?v=GMIWm5y90xA) - Anthropic, May 2026.
+- [Building your own software factory](https://ai.engineer/talks/building-your-own-software-factory) - Eric Zakariasson, Cursor, AI Engineer Europe 2026. Covers agent-first workflows, guardrails, and verifiable outputs using Dan Shapiro's autonomy framework.
+- [The Missing Primitive for Agent Swarms](https://ai.engineer/talks/5Sui_OnSRlY-missing-primitive-agent-swarms) - Lou Bichard, Ona, AI Engineer Europe 2026. Argues software factories need a coordination layer of state machines, gates, and a CLI so agents preserve context and advance only after checks pass.
 - [WF2026: Software Factories and Keynotes](https://www.youtube.com/watch?v=htM02KMNZnk) - AI Engineer World's Fair 2026 recording of the Software Factories track, including Jason Liu of OpenAI on getting the most out of Codex and Tereza Tizkova's "Rise of the Software Factory."
 - [Shopify's AI Phase Transition](https://www.latent.space/p/shopify) - Latent Space with Shopify CTO Mikhail Parakhin, April 2026.
 - [How Stripe built minions, AI coding agents that ship 1,300 PRs weekly from Slack reactions](https://podcasts.apple.com/us/podcast/how-stripe-built-minions-ai-coding-agents-that-ship/id1809663079?i=1000757255000) - How I AI podcast with Steve Kaliski, March 2026.
